@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the task section */
+.task-container {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Task header styling */
+.task-header {
+    background-color: #2a7221; /* Green background */
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Sidenav container */
+.sidenav {
+    height: 70%; 
+    width: 60px; /* Width of the sidenav */
+    position: absolute; /* Absolute position within the box */
+    z-index: 1; /* Stay on top */
+    top: 60px; /* Align below the task header */
+    left: 20px; /* Margin from the left of the box */
+    background-color: #f1f1f1; /* Light grey background */
+    padding-top: 20px; /* Padding at the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidenav links */
+.sidenav a {
+    padding: 15px 8px 15px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 10px; /* Space between the buttons */
+}
+
+/* Color blocks in the sidenav */
+.sidenav a:nth-child(1) { background-color: #4CAF50; }
+.sidenav a:nth-child(2) { background-color: #2196F3; }
+.sidenav a:nth-child(3) { background-color: #f44336; }
+.sidenav a:nth-child(4) { background-color: #555; }
+
+/* Change color on hover */
+.sidenav a:hover {
+    left: 60px;
+}
+
+/* Main content */
+.main {
+    margin-left: 100px; /* Space to accommodate the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 10px 10px;
+    border: 1px solid #ddd; /* Border around the main content */
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="task-container">
+        <div class="sidenav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="main">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
